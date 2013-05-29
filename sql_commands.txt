@@ -1,0 +1,56 @@
+
+//creates a database under the name i provided.
+CREATE DATABASE project13June2011
+
+//creates a table.
+CREATE TABLE customers
+(
+  id INT PRIMARY KEY AUTO_INCREMENT,
+  name VARCHAR(55),
+  email VARCHAR(55),
+  password VARCHAR(18),
+  postcode VARCHAR(8),
+  address VARCHAR(55),
+  tel VARCHAR(14)
+)
+
+//inserting data into the table.
+INSERT INTO customers
+(name, email, password, postcode, address, tel)
+VALUE
+('SooJi', 'sooji@dotpeak.com', '1234', 'WC1 7PS', 'Kings Cross Rd, London', '07947917245')
+
+//updating data...
+UPDATE customers
+SET name = 'SooJi Love'
+WHERE email = 'sooji@dotpeak.com'
+
+
+//deleting data...
+
+DELETE FROM customers
+WHERE email = 'james@franco.com';
+
+
+//selecting data...
+
+SELECT * FROM customers
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
